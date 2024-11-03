@@ -1,235 +1,270 @@
-// === Massilar bilan ishlash === // 
+// Massivlar bilan ishlash
 
-//     1 - masala
+// 2-masala
+// let arr = [1, 2, 3, 4, 5, 6, 7];
 
-// let arr = [1, 2, 3, 4, 5];
-// let arr1 = [3, 4, 5, 6, 7]
-// function number(arr, arr1) {
-//     let res = arr.filter(valeus => arr1.includes(valeus))
-//     return res
+// function son(arg){
+//     let res = []
+//     let kon = 4;
+//     for (const element of arg) {
+//        res.push(element * kon);
+//     }
+
+//     return res;
 // }
-// console.log(number(arr, arr1));
 
+// console.log(son(arr));
 
-// 2 - masala
+// 3-masala
+// let arr = [ 1, 2, -3, 4, -5, -6];
 
-// let arr = [1, 2, 3]
-// let sum = 3;
-// function number(arr, sum) {
-//     let res = arr.map(function (valeus) {
-//         return valeus * sum
-//     })
-//     return res
-// }
-// console.log(number(arr, sum));
-
-// 3 - masala
-
-// let arr = [-1, -2, -3, -4, 1, 2, 3, 4]
-// function num(arr) {
-//     let sum = arr
-//         .filter(function (valeus) {
-//             return valeus > 0
-//         })
-//         .reduce(function (v, sum) {
-//             return sum + v
-//         })
+// function sonArr(arg){
+//     let sum = 0;
+//     for (let i = 0; i < arg.length; i++) {
+//         if (typeof arg.length == 'number' && arg.length > 0) {
+//             sum++;
+//         }
+//     }
 //     return sum
 // }
-// console.log(num(arr));
+// console.log(sonArr(arr));
 
+// 4-masala
+// let arr = [0, 2, 3, 4, 5, 0, 6];
 
-// 4 - masala
+// function son(arg) {
+//     let result = [];
+//     let count = 0;
 
-// let arr = [0, 0, 0, 1, 2, 3]
-// function num(arr) {
-//     return arr.sort(function (a, b) {
-//         return (a === 0) - (b === 0)
-//     })
-// }
-// console.log(num(arr));
-
-// 6 - masala
-
-// let arr = [[1], [2], [3], [4], [5]]
-// function num(arr) {
-//     let res = arr.flat()
-//     return res
-// }
-// console.log(num(arr));
-
-// 7 - masala
-// let arr = [1, 2, 3]
-// let arr1 = [3, 4, 5]
-// function num(arr, arr1) {
-//     let res = arr.concat(arr1)
-//     return res.filter(function (v, index) {
-//         return res.indexOf(v) == index
-//     })
-// }
-// console.log(num(arr, arr1));
-
-
-// 8 - masala
-
-// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-// function num(arr) {
-//     let juft = []
-//     let toq = []
-//     arr.forEach(element => {
-//         if (element % 2 == 1) {
-//             toq.push(element)
+//     for (const element of arg) {
+//         if (element === 0) {
+//             count++;
 //         } else {
-//             juft.push(element)
+//             result.push(element);
 //         }
-//     });
-//     return { juft, toq }
-// }
-// console.log(num(arr));
-
-// 9 - masala
-
-// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-// let res = arr.includes(7)
-// console.log(res);
-
-// 10 - masala
-
-// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-// function num(arr) {
-//     let max = Math.max(...arr)
-//     let min = Math.min(...arr)
-//     return { max, min }
-// }
-// console.log(num(arr));
-
-// === Obyekt bilan ishlash === //
-
-//     11 - masala
-// let car = {
-//     c: 'Tesla',
-//     b: 'Tayota',
-//     a: 'BMW'
-// }
-// function obj(car) {
-//     let keys = Object.keys(car).sort();
-//     let res = {}
-//     for (const key of keys) {
-//         res[key] = car[key]
 //     }
-//     return res
-// }
-// console.log(obj(car));
 
-
-// 12 - masala
-// let user = {
-//     name: 'Mirzatillo'
-// };
-
-// let entries = Object.entries(user);
-// console.log(entries);
-
-// 13 - masala
-
-// let car = {
-//     nmae: 'BMW',
-// }
-// let car1 = {
-//     age: 2024
-// }
-// let res = Object.assign(car, car1)
-// console.log(res);
-
-
-// 14 - masala
-// let arr1 = {
-//     a: 1
-// }
-// let arr2 = {
-//     b: 2
-// }
-// let res = arr1.a + arr2.b
-// console.log(res);
-
-// 15-masla
-
-// let user ={
-//     name:'Shohjahon',
-//     age : 16
-// }
-// function obk(obj,oldKey,yangi){
-//     if(oldKey in obj){
-//         obj[yangi] = obj[oldKey];
-//         delete obj[oldKey]
+//     for (let i = 0; i < count; i++) {
+//         result.push(0);
 //     }
-//     return obj
+
+//     return result;
 // }
-// let res = obk(user, 'name' , 'fullName')
-// console.log(res);
 
+// console.log(son(arr));
 
-// 16-masala
-// let arr ={
-//     name :'Shohjahon'
-// }
-// delete arr.name
-// console.log(arr);
+// 5-masala
+// let arr = [1, 2, 3, 4, 5, 1, 6, 7, 1, 8, 9, 1]
+// let count = 0;
 
-// 17-masala
-
-// let meva = [
-//     { category: 'fruit', name: 'apple' },
-//     { category: 'fruit', name: 'banana' },
-//     { category: 'vegetable', name: 'carrot' },
-//     { category: 'fruit', name: 'orange' },
-//     { category: 'vegetable', name: 'broccoli' }
-// ];
-// function num(obj){
-//  return obj.reduce((res,item) =>{
-//     if(!res[item.category]){
-//         res[item.category] =[]
+// function son(arg){
+//     for (let i = 0; i < arg.length; i++) {
+//             if (arg[i]== 1) {
+//                 count++;
+//             }
 //     }
-//     res[item.category].push(item.name)
-//     return res
-//  })
-
+//     return count
 // }
-// console.log(num(meva));
+
+// console.log(son(arr));
+
+// 7-masala
+// let arr = [1, 2, 3, 4, 5, 6];
+// let arr1 = [6, 7, 8, 9, 0];
+
+// function son(arg1, arg2) {
+//     let res = arg1.concat(arg2);
+
+//     let newArray = [...new Set(res)];
+ 
+//     return newArray;
+// }  
+
+// console.log(son(son(arr, arr1)));
 
 
-// === String bilan ishlash === //
+// 8-masala
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// function son(arg) {
+//     let juft = 0;
+//     let toq = 0;
+//     for (let i = 0; i < arg.length; i++) {
+//         if (arg[i] % 2 == 0) {
+//             juft++;
+//         } else {
+//             toq++;
+//         }
+//     }
+//     return { juft, toq };
+// }
+
+// console.log(son(arr));
+
+
+// 9-masala
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// function TureorFalse(arg){
+//    let el = 3
+//    for (let i = 0; i < arg.length; i++) {
+//       if (arg[i] == 3) {
+//         return true
+//       }
+//    }
+//    return false
+// }
+// console.log(TureorFalse(arr));
+
+
+// 10-masala
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// function son(arg){
+//     let max = arg[0];
+//     let min = arg[0];
+//     for (let i = 0; i < arg.length; i++) {
+//           if (max < arg[i]) {
+//             max = arg[i]
+//           };
+          
+//           if (min > arg[i]) {
+//             min = arg[i]
+//           };
+//     };
+
+//     return {max, min};
+// }
+// console.log(son(arr));
+
+
+
+// Obyektlar bilan ishlash//
+
+
+// 11-masala
+// const car = {
+//     name: 'mercedes',
+//     color: 'black',
+//     age: '2024'
+// }
+
+// let sort = Object.keys(car).sort();
+
+// let sortCar = {};
+
+// sort.forEach(key => {
+//     sortCar[key] = car[key];
+// });
+
+// console.log(sortCar);
+
+
+
+// 12-masala
+// const car = {
+//     name: 'mercedes',
+//     color: 'black',
+//     age: '2024'
+// }
+
+// let keys = Object.keys(car);        
+// let values = Object.values(car);    
+
+// console.log(keys);
+// console.log(values);
+
+
+// 13-masala
+// const car = {
+//     name: 'mercedes',
+//     color: 'black',
+//     age: '2024'
+// }
+
+// const john = {
+//    name: 'John',
+//    age: 99
+// }
+
+// let newObject = {...car, ...john}
+
+// console.log(newObject);
+
+// 15-masala
+// const john = {
+//    name: 'John',
+//    age: 99
+// }
+
+// const oldkey = 'age'
+
+// const newkey = 'yosh'
+
+
+// john[newkey] = john[oldkey];
+
+// delete john[oldkey]
+
+// console.log(john);
+
+
+
+// String bilan ishlash
 
 // 22-masala
-// let arr ='Salom'
-// function str(arr){
-//     return arr.split('').reverse().join('')
-// }
-// console.log(str(arr));
+// let str = 'salom bolalar'
+
+// let res = str.split('').reverse().join('');
+
+
+// console.log(res);
+
 
 // 23-masala
+// function enguxunsoz(arg) {
+//     let arr = arg.split(' '); 
+//     let max = ''; 
 
-// let arr = 'Salom bolalar'
-// function str(arr){
-//     let words =arr.split(' ')
-//     let res = ''
-//    for (const word of words) {
-//         if(word.length > res.length){
-//             res = word
+//     for (let i = 0; i < arr.length; i++) { 
+//         if (arr[i].length > max.length) {
+//             max = arr[i]; 
 //         }
-//    }
-//    return res
+//     }
+
+//     return max; 
 // }
-// console.log(str(arr));
+
+// let sentence = 'salom bolalar';
+// let res = enguxunsoz(sentence); 
+// console.log(res);
 
 
-// 25-masala
-// let arr = 'Sa1lom'
-// function str(arr){
-//     return arr.split('')
-//     .filter(function(v){
-//         return ! /[0-9]/.test(v)
-//     })
-//     .join('')
+// 24-masala
+// let str = 'salom';
+// let harf = 'a'; 
+// let res = soz(str, harf);
+
+// function soz(str, harf) {
+//     let result = '';
+//     for (let i = 0; i < str.length; i++) {
+//         result += str[i]; 
+//         if (str[i] === harf) { 
+//             result += harf; 
+//         }
+//     }
+
+//     return result; 
 // }
-// console.log(str(arr));
+
+// console.log(res); 
+
+
+// 25 -masala
+// function soz(str) {
+//     return str.replace(/[0-9]/g, ''); 
+// }
+// let res = 'sa2lom1';
+// let result = soz(res);
+
+// console.log(result); 
